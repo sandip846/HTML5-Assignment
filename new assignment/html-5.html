@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5-task</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:skyblue;
+            margin: auto;
+            text-align: center;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid #000;
+            background-color: aqua;
+            padding: 3px;
+            margin: 25px;
+
+        }
+
+        video,audio {
+            margin: auto;
+            border-bottom: 2px solid white;
+        }
+
+        audio {
+            width: 25%;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="audio">
+        <p>Create by audio tag </p>
+        <audio src="audio.mpeg" controls></audio>
+
+    </section>
+
+
+    <section class="video">
+        <p>Create by video tag</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yR1wbqGz06c?si=DQrMcLmLtZsdNimI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+
+    <section class="canvas">
+        <p>Creat by canvas tag </p>
+        <canvas id="myCanvas" width="200" height="100"
+            style="border:5px dashed #000000; background-color:yellow;"></canvas>
+    </section>
+
+
+    <section class="svg">
+        <p>Creat by svg tag</p>
+        <div class="svg-container">
+
+           
+            <svg width="300" height="170" >
+                <rect width="200" height="150" x="10" y="10" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+            </svg>
+    
+            <svg width="300" height="130">
+                <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="blue" />
+            </svg>
+
+            <svg height="100" width="100">
+                <circle r="45" cx="50" cy="50" fill="red" stroke="green" stroke-width="10" opacity="0.5" />
+            </svg>
+
+        </div>
+    </section>
+
+</body>
+</html> 
